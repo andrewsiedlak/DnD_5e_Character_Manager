@@ -26,18 +26,23 @@
     'End Function
 
     ''' <summary>
-    ''' Rolls a die of a given number of sides a given number of times and returns the sum of the results
+    ''' The theoretical number of sides of this die object, controlling the maximum value it can be
     ''' </summary>
-    ''' <param name="numOfDie">The number of times to roll</param>
-    ''' <param name="numOfSides">The number of sides of the die to roll</param>
     ''' <returns></returns>
-    Public Shared Function RollValue(numOfDie As Integer, numOfSides As Integer) As Integer
-        Dim sum = 0
+    Public ReadOnly Property NumberOfSides As Integer
+        Get
+            Return _numberOfSides
+        End Get
+    End Property
+    Private _numberOfSides As Integer
+
+    ''' <summary>
+    ''' Returns a random number of minimum 0 and maximum being the number of sides of the die
+    ''' </summary>
+    ''' <returns></returns>
+    Public Function RollValue() As UShort
         Dim rand = New Random
-        For rolls = 1 To numOfDie
-            sum += rand.Next(minValue:=1, maxValue:=numOfSides + 1)
-        Next
-        Return sum
+        Return rand.Next(minValue:=1, maxValue:=Me.NumberOfSides + 1)
     End Function
 
 End Class

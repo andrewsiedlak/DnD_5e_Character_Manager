@@ -73,6 +73,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Character.vb" />
+    <Compile Include="Damage.vb" />
+    <Compile Include="DamageCollection.vb" />
+    <Compile Include="DamageResult.vb" />
     <Compile Include="Die.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
