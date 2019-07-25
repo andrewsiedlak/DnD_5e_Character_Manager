@@ -42,6 +42,12 @@ Partial Class Form1
         Me.charModBox = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox13 = New System.Windows.Forms.TextBox()
+        Me.StButton = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -198,11 +204,65 @@ Partial Class Form1
         Me.TextBox13.Size = New System.Drawing.Size(234, 20)
         Me.TextBox13.TabIndex = 19
         '
+        'StButton
+        '
+        Me.StButton.Location = New System.Drawing.Point(67, 51)
+        Me.StButton.Name = "StButton"
+        Me.StButton.Size = New System.Drawing.Size(22, 20)
+        Me.StButton.TabIndex = 20
+        Me.StButton.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(147, 51)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(22, 20)
+        Me.Button2.TabIndex = 21
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(227, 51)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(22, 20)
+        Me.Button3.TabIndex = 22
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(307, 51)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(22, 20)
+        Me.Button4.TabIndex = 23
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(387, 51)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(22, 20)
+        Me.Button5.TabIndex = 24
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(467, 51)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(22, 20)
+        Me.Button6.TabIndex = 25
+        Me.Button6.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(579, 261)
+        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.StButton)
         Me.Controls.Add(Me.TextBox13)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.charModBox)
@@ -250,4 +310,10 @@ Partial Class Form1
     Friend WithEvents charModBox As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents TextBox13 As TextBox
+    Friend WithEvents StButton As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
 End Class

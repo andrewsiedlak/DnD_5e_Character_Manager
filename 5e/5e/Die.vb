@@ -25,16 +25,20 @@
     '    Return RollValue(CInt(numOfDie), CInt(numOfSides))
     'End Function
 
+    Public Sub New(numOfSides As UShort)
+        Me._numberOfSides = numOfSides
+    End Sub
+
     ''' <summary>
     ''' The theoretical number of sides of this die object, controlling the maximum value it can be
     ''' </summary>
     ''' <returns></returns>
-    Public ReadOnly Property NumberOfSides As Integer
+    Public ReadOnly Property NumberOfSides As UShort
         Get
             Return _numberOfSides
         End Get
     End Property
-    Private _numberOfSides As Integer
+    Private _numberOfSides As UShort
 
     ''' <summary>
     ''' Returns a random number of minimum 0 and maximum being the number of sides of the die

@@ -32,14 +32,23 @@
     End Property
     Private _stats As StatBlock
 
+    Private ReadOnly Property CheckDie As Die
+        Get
+            If _checkDie Is Nothing Then _checkDie = New Die(numOfSides:=20)
+            Return _checkDie
+        End Get
+    End Property
+    Private _checkDie As Die
+
+
 #End Region
 
 #Region "Methods"
 
     Public Function AbilityCheck(statType As Stat.StatType) As Integer
 
-        Dim value = Die.RollValue(1, 20)
-        value = value + Me.Stats.Get(statType:=statType).Modifier
+        Dim value = Me.CheckDie.RollValue()
+        value += Me.Stats.Get(statType:=statType).Modifier
         Return value
 
     End Function

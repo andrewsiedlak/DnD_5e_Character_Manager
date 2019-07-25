@@ -73,9 +73,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Character.vb" />
-    <Compile Include="Damage.vb" />
     <Compile Include="DamageCollection.vb" />
     <Compile Include="DamageResult.vb" />
+    <Compile Include="Damage\Damage.vb" />
     <Compile Include="Die.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -99,6 +99,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Skills\Skill.vb" />
+    <Compile Include="Skills\SkillSet.vb" />
     <Compile Include="Stat.vb" />
     <Compile Include="StatBlock.vb" />
   </ItemGroup>

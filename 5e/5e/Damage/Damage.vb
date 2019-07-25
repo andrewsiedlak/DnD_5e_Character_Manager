@@ -73,7 +73,7 @@
         If DamageDie IsNot Nothing Then
             Return New DamageResult(damageValue:=Me.DamageDie.RollValue(), damageType:=Me.DamageType)
         ElseIf ConstantDamage IsNot Nothing Then
-            Return ConstantDamage
+            Return New DamageResult(damageValue:=Me.ConstantDamage, damageType:=Me.DamageType)
         End If
 
     End Function
