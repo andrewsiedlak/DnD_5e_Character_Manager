@@ -29,4 +29,17 @@
 
     End Sub
 
+    Private Function MakeCheck(statType As Stat.StatType) As UShort
+        Dim value = Me.Character.AbilityCheck(statType:=statType)
+        Console.WriteLine(String.Format("Rolled: {0}", value))
+    End Function
+
+    Private Sub StButton_Click(sender As Object, e As EventArgs) Handles StButton.Click
+        MakeCheck(Stat.StatType.Strength)
+    End Sub
+
+    Private Sub DxButton_Click(sender As Object, e As EventArgs) Handles DxButton.Click
+        MakeCheck(Stat.StatType.Dexterity)
+    End Sub
+
 End Class
